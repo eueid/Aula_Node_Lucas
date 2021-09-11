@@ -16,11 +16,11 @@
                   <div class="card-body">
                      <h4 class="card-title"><%= article.title %></h4>
                      <div class="card-subtitle text-muted mb-2">
-                         <%= article.createdAt.toLocaleDateString()  %>
+                         <%# article.createdAt.toLocaleDateString()  %>
                      </div>
                      <div class="card-text mb-2">
                          <%= article.description %> </div>
-                         <a href="articles/<%= article.slug %>" class= "btn btn-primary">Mais detalhes</a>
+                         <a href="articles/<%= article.id %>" class= "btn btn-primary">Mais detalhes</a>
                          <a href="articles/edit/<%= article.id %>" class= "btn btn-info">Editar</a>
 
                          <form action="/articles/<%= article.id %>?_method=DELETE"
